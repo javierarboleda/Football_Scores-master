@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:initialLayout="@layout/widget_games_today"
-    android:initialKeyguardLayout="@layout/widget_games_today"
+    android:initialLayout="@layout/widget_all_games"
+    android:initialKeyguardLayout="@layout/widget_all_games"
     android:minHeight="@dimen/widget_detail_default_height"
     android:minResizeHeight="@dimen/widget_detail_min_resize_height"
     android:minResizeWidth="@dimen/widget_detail_min_resize_width"

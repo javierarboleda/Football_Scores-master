@@ -37,9 +37,11 @@
         <!-- Widget -->
         <receiver
             android:name=".widget.WidgetProvider"
-            android:label="@string/widget_title">
+            android:label="@string/widget_title"
+            android:enabled="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="barqsoft.footballscores.ACTION_DATA_UPDATED" />
             </intent-filter>
 
             <meta-data
@@ -47,6 +49,12 @@
                 android:resource="@xml/widget_provider_info" />
 
         </receiver>
+
+        <service
+                android:name=".widget.WidgetRemoteViewsService"
+                android:enabled="true"
+                android:exported="false"
+                android:permission="android.permission.BIND_REMOTEVIEWS" />
 
         <service android:name=".service.myFetchService" />
 

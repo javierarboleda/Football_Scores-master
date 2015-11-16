@@ -49,8 +49,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:divider="@null"
-                android:dividerHeight="0dp"
-                tools:listitem="@layout/widget_detail_list_item"/>
+                android:dividerHeight="4dp"
+                tools:listitem="@layout/widget_games_list_item"/>
             <TextView
                 android:id="@+id/widget_empty"
                 android:layout_width="match_parent"
